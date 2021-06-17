@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:real_estate_ui/screens/LoginScreen.dart';
+import 'package:real_estate_ui/screens/login_screen.dart';
 
 void main() {
   runApp(
