@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'dart:math' as math;
 
-import 'package:real_estate_ui/screens/HomeScreen.dart';
+import 'package:real_estate_ui/screens/home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -21,7 +21,7 @@ class LoginScreen extends StatelessWidget {
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.symmetric(
-                      vertical: 10.0, horizontal: 10.0),
+                      vertical: 10.0, horizontal: 15.0),
                   child: Text(
                     'Welcome \n Your Dream Home',
                     style: TextStyle(
@@ -39,7 +39,7 @@ class LoginScreen extends StatelessWidget {
                     Container(
                       child: Image.asset(
                         'assets/images/house.png',
-                        width: 400.0,
+                        width: 350.0,
                       ),
                     ),
                     Container(
@@ -51,18 +51,18 @@ class LoginScreen extends StatelessWidget {
                           opacity: 0.1,
                           child: Image.asset(
                             'assets/images/house.png',
-                            width: 400.0,
+                            width: 350.0,
                           ),
                         ),
                       ),
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: 50.0,
-                ),
+                // SizedBox(
+                //   height: 40.0,
+                // ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 10.0),
+                  margin: EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
                   child: ElevatedButton(
                     onPressed: () => Navigator.push(
                       context,
@@ -80,17 +80,17 @@ class LoginScreen extends StatelessWidget {
                           vertical: 10.0, horizontal: 80.0),
                       primary: Color.fromRGBO(87, 79, 56, 1),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
+                        borderRadius: BorderRadius.circular(15.0),
                       ),
                     ),
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  margin: EdgeInsets.fromLTRB(0, 10.0, 0, 0),
                   child: RichText(
                     text: TextSpan(
                         style: TextStyle(
-                          fontSize: 20.0,
+                          fontSize: 18.0,
                           color: Color.fromRGBO(168, 168, 168, 1),
                         ),
                         text: 'Don\'t have an account? ',
